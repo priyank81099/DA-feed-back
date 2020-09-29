@@ -7,13 +7,14 @@
     "start": "node server.js",
     "server": "nodemon server.js"
   },
-  "engines" : {
-	"node" : "12.18.3"
+  "engines": {
+    "node": "12.18.3"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.0",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",
