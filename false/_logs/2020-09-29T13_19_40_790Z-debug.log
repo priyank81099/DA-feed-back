@@ -1,0 +1,53 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'apk',
+1 verbose cli   '--no-cache',
+1 verbose cli   'add',
+1 verbose cli   '--virtual',
+1 verbose cli   'builds-deps',
+1 verbose cli   'build-base',
+1 verbose cli   'python'
+1 verbose cli ]
+2 info using npm@6.14.6
+3 info using node@v12.18.3
+4 verbose npm-session cdeb9a39472bc925
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 http fetch GET 200 https://registry.npmjs.org/python 502ms
+8 http fetch GET 200 https://registry.npmjs.org/add 551ms
+9 http fetch GET 200 https://registry.npmjs.org/python/-/python-0.0.4.tgz 276ms
+10 http fetch GET 200 https://registry.npmjs.org/add/-/add-2.0.6.tgz 235ms
+11 silly pacote tag manifest for add@latest fetched in 795ms
+12 silly pacote tag manifest for python@latest fetched in 793ms
+13 http fetch GET 404 https://registry.npmjs.org/build-base 1416ms
+14 http fetch GET 404 https://registry.npmjs.org/builds-deps 1443ms
+15 http fetch GET 200 https://registry.npmjs.org/apk 1560ms
+16 http fetch GET 404 https://registry.npmjs.org/build-base 1110ms
+17 http fetch GET 404 https://registry.npmjs.org/builds-deps 1088ms
+18 silly fetchPackageMetaData error for build-base@latest 404 Not Found - GET https://registry.npmjs.org/build-base - Not found
+19 silly fetchPackageMetaData error for builds-deps@latest 404 Not Found - GET https://registry.npmjs.org/builds-deps - Not found
+20 http fetch GET 200 https://registry.npmjs.org/apk/-/apk-1.2.0.tgz 1095ms
+21 silly pacote tag manifest for apk@latest fetched in 2672ms
+22 timing stage:rollbackFailedOptional Completed in 1ms
+23 timing stage:runTopLevelLifecycles Completed in 2970ms
+24 verbose stack Error: 404 Not Found - GET https://registry.npmjs.org/build-base - Not found
+24 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-fetch\check-response.js:114:15
+24 verbose stack     at processTicksAndRejections (internal/process/task_queues.js:97:5)
+25 verbose statusCode 404
+26 verbose pkgid build-base@latest
+27 verbose cwd D:\React\DA-Feed-master\backend
+28 verbose Windows_NT 10.0.19041
+29 verbose argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "apk" "--no-cache" "add" "--virtual" "builds-deps" "build-base" "python"
+30 verbose node v12.18.3
+31 verbose npm  v6.14.6
+32 error code E404
+33 error 404 Not Found - GET https://registry.npmjs.org/build-base - Not found
+34 error 404
+35 error 404 'build-base@latest' is not in the npm registry.
+36 error 404 You should bug the author to publish it (or use the name yourself!)
+37 error 404 Note that you can also install from a
+38 error 404 tarball, folder, http url, or git url.
+39 verbose exit [ 1, true ]
