@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
 const bodyparser = require("body-parser");
-const bcrypt = require("bcrypt")
+const bcrypt = require("bcryptjs")
 var cors = require('cors');
 
 require("../mongo");
@@ -39,7 +39,8 @@ router.route("/users").post(async (req, res) => {
     User.findOne({ email: req.body.email }, async (err, user) => {
         if (!user && !err) {
             try {
-                const hashedPassword = await bcrypt.hash(req.body.password, 10);
+				var salt = bcrypt.genSaltSync(10);
+                const hashedPassword = await bcrypt.hashSync(req.body.password, salt);
                 const user = new User();
                 user.first_name = req.body.first_name;
                 user.last_name = req.body.last_name;
